@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم الشركة - Company Section</title>
+    <style>
+        /* التنسيقات العامة */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1d;
+            color: #ffffff;
+            margin: 0;
+            padding: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* حاوية الشركة الرئيسية */
+        .company-container {
+            background-color: #2c2c34;
+            padding: 30px;
+            border-radius: 12px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+        }
+
+        /* 1. استخدام ID لتحديد عنصر فريد (#custom) */
+        #custom {
+            border: 2px solid #ffb703;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        /* 2. استخدام Class لتطبيق تنسيق مميز (.fancy) */
+        .fancy {
+            color: #ccff00;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+        }
+
+        /* صورة الشعار */
+        .company-logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+            border: 3px solid #ccff00;
+        }
+
+        /* نبذة عن الشركة */
+        .about-section {
+            background-color: #1e1e24;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        /* قسم الفريق */
+        .team-title {
+            font-size: 1.3rem;
+            color: #ffb703;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 8px;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        .team-member {
+            background-color: #1e1e24;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- تم تطبيق الـ id (#custom) على الكارت الرئيسي -->
+    <div class="company-container" id="custom">
+        
+        <!-- صورة الشعار -->
+        <img src="https://via.placeholder.com/150" alt="صورة الشعار" class="company-logo">
+
+        <!-- اسم الشركة مع تطبيق الـ class (.fancy) -->
+        <h1 class="fancy">اسم الشركة (Company Name)</h1>
+
+        <!-- نبذة عن الشركة -->
+        <div class="about-section">
+            <h3>نبذة عن الشركة</h3>
+            <p>نحن شركة متخصصة في تطوير المواقع والحلول البرمجية الحديثة، نهدف لتقديم أفضل تجربة مستخدم وتصاميم برمجية نظيفة.</p>
+        </div>
+
+        <!-- الفريق -->
+        <div>
+            <div class="team-title">الفريق (The Team)</div>
+            <div class="team-grid">
+                <div class="team-member">مطور الواجهات</div>
+                <div class="team-member">مصمم UX/UI</div>
+                <div class="team-member">مدير المشروع</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
